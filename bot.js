@@ -25,19 +25,19 @@ client2.on('ready', () => {
 
 
 client.on('message', message => {
-    if(message.content === prefix+'راتب'){
+    if(message.content === prefix+'daily'){
         message.channel.send('#daily')
     }
 });
 
 client.on('message', message => {
-    if(message.content === prefix+'مبلغ'){
+    if(message.content === prefix+'credits'){
         message.channel.send('#credits')
     }
 });
 
 client.on('message', message => {
-    if(message.content === prefix+'ريب'){
+    if(message.content === prefix+'rep'){
         message.channel.send("#rep "+"<@" + myid + ">")
     }
 });
@@ -67,7 +67,7 @@ client.on('message', message => {
 
 
 
-if (command == "تحدث") {
+if (command == "say") {
 let rank = message.guild.member(message.author).roles.find('name', 'Role.Kahrbaa');
 if (!rank) return message.reply(' ')
   message.channel.send(args.join("  "))
@@ -76,19 +76,19 @@ if (!rank) return message.reply(' ')
 });
 
 client2.on('message', message => {
-    if(message.content === prefix+'راتب'){
+    if(message.content === prefix+'daily'){
         message.channel.send('#daily')
     }
 });
 
 client2.on('message', message => {
-    if(message.content === prefix+'مبلغ'){
+    if(message.content === prefix+'credits'){
         message.channel.send('#credits')
     }
 });
 
 client2.on('message', message => {
-    if(message.content === prefix+'ريب'){
+    if(message.content === prefix+'rep'){
         message.channel.send('#rep <@286088294234718209>')
     }
 });
@@ -118,7 +118,7 @@ client2.on('message', message => {
 
 
 
-if (command == "تحدث") {
+if (command == "say2") {
 let rank = message.guild.member(message.author).roles.find('name', 'Role.Kahrbaa');
 if (!rank) return message.reply(' ')
   message.channel.send(args.join("  "))
